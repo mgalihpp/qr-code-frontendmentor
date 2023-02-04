@@ -19,32 +19,26 @@
       html {
         @import url(https://fonts.google.com/specimen/Outfit);
 
-        font-family: Outfit;
+        font-family: 'Outfit', sans-serif;
       }
 
       body {
         background: hsl(212, 45%, 89%);
       }
 
-      .card {
+      main {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
       }
 
-      .card-body{
+      .card{
         background: hsl(0, 0%, 100%);
         border-radius: 5%;
-        width: 15rem;
-        height: 23rem;
-      }
-
-      .img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px 10px 20px 10px;
+        width: 20rem;
+        padding: 1rem;
+        height: auto;
       }
 
       img {
@@ -53,37 +47,40 @@
       }
 
       .top-text {
-        color: hsl(218, 36%, 9%);
-        font-size: 15px;
+        color: hsl(218, 44%, 22%);
+        font-size: 0.9375rem;
         text-align: center;
         font-weight: 700;
-        margin: 10px 10px 20px 10px;
+        margin: 10px 10px 15px 10px;
       }
 
       .text {
         color: hsl(214, 5%, 73%);
-        font-size: 15px;
+        font-size: 0.9375rem;
         text-align: center;
         font-weight: 400;
-        margin: 10px 10px 20px 10px;
+        margin: 10px 10px 15px 10px;
       }
 
     </style>
   </head>
   <body>
-    <div class="card">
-      <div class="card-body">
+    <main>
+      <div class="card">
         <div class="img">
           <img src="images/image-qr-code.png" alt=""/>
         </div>
         <div class="top-text">
-          Improve your front-end skills by building projects
-        </div>
+          <h2>
+              Improve your front-end skills by building projects
+          </h2>
+          </div>
         <div class="text">
-          Scan the QR code to visit Frontend Mentor and take your coding skills to
-          the next level
-        </div>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+          </p>
+          </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
